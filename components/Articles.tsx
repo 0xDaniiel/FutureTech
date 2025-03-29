@@ -18,7 +18,7 @@ const article = {
 
 const Articles = () => {
   return (
-    <div className="grid gap-4 md:flex bg-gray-950 items-center p-5 rounded-lg shadow-lg mb-10">
+    <div className="grid gap-4 md:flex bg-gray-950 items-center rounded-lg shadow-lg mb-10">
       <Image
         src={article.image}
         alt="Articles"
@@ -27,21 +27,33 @@ const Articles = () => {
         className="w-full md:w-1/2 h-auto rounded-lg shadow-lg"
       />
       <section className="flex flex-col gap-6 p-4">
-        <h2 className="text-2xl font-bold text-white">{article.title}</h2>
+        <h2 className="text-2xl font-semibold text-white">{article.title}</h2>
         <p className="text-gray-400">{article.description}</p>
 
-        <div className="grid grid-cols-2 md:flex justify-between gap-4 text-gray-300">
+        <div className="flex md:gap-8 gap-5 text-gray-300">
           <section>
-            <p className="text-gray-400">Category</p>
-            <p>{article.category}</p>
+            <p className="text-gray-400 text-sm md:text-base text-nowrap">
+              Category
+            </p>
+            <p className="text-sm md:text-base text-nowrap ">
+              {article.category}
+            </p>
           </section>
           <section>
-            <p className="text-gray-400">Publication Date</p>
-            <p>{article.publicationDate}</p>
+            <p className="text-gray-400 text-sm md:text-base text-nowrap">
+              Publication Date
+            </p>
+            <p className="text-sm md:text-base text-nowrap ">
+              {article.publicationDate}
+            </p>
           </section>
           <section>
-            <p className="text-gray-400">Author</p>
-            <p>{article.author}</p>
+            <p className="text-gray-400 text-sm md:text-base text-nowrap">
+              Author
+            </p>
+            <p className="text-sm md:text-base text-nowrap ">
+              {article.author}
+            </p>
           </section>
         </div>
 
