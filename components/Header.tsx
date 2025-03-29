@@ -2,13 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
 
-const navLinks = [
-  { name: "Home", path: "/" },
-  { name: "News", path: "/news" },
-  { name: "Podcasts", path: "/podcast" },
-  { name: "Resources", path: "/resources" },
-];
-
 const Header = () => {
   return (
     <header className="py-5 px-4 md:px-10 ">
